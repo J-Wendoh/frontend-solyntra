@@ -354,12 +354,9 @@ function playVideo() {
     const placeholder = document.getElementById('video-placeholder');
     const embed = document.getElementById('video-embed');
     
-    // For now, just show a message since no video URL is provided
-    alert('Video will play automatically when YouTube URL is provided in the HTML');
-    
-    // When video URL is available, uncomment below:
-    // placeholder.style.display = 'none';
-    // embed.style.display = 'block';
+    // Show the video embed and hide placeholder
+    placeholder.style.display = 'none';
+    embed.style.display = 'block';
 }
 
 function toggleVolume() {
