@@ -1,0 +1,25 @@
+{
+  "name": "bitcoin-lightning-ussd",
+  "version": "1.0.0",
+  "description": "Bitcoin Lightning USSD - Send and receive Bitcoin using simple USSD codes",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 8000 -c-1",
+    "start": "npx http-server . -p 8000 -c-1",
+    "build": "echo 'Build complete - static files ready'",
+    "preview": "npx http-server . -p 8000 -c-1"
+  },
+  "keywords": [
+    "bitcoin",
+    "lightning",
+    "ussd",
+    "mobile",
+    "payments",
+    "africa",
+    "fintech"
+  ],
+  "author": "Bitcoin Lightning USSD Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
