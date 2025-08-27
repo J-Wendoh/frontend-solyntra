@@ -333,22 +333,6 @@ function showCopyFeedback(feedback) {
     }
 }
 
-// FAQ Toggle Function
-function toggleFAQ(element) {
-    const faqItem = element.closest('.faq-item');
-    const isActive = faqItem.classList.contains('active');
-    
-    // Close all FAQ items
-    document.querySelectorAll('.faq-item').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    // Open clicked item if it wasn't active
-    if (!isActive) {
-        faqItem.classList.add('active');
-    }
-}
-
 // Video Functions
 function playVideo() {
     const placeholder = document.getElementById('video-placeholder');
@@ -645,9 +629,3 @@ window.addEventListener('unhandledrejection', (e) => {
     console.error('Unhandled promise rejection:', e.reason);
     // Could send to analytics service
 });
-
-// Export functions for global access
-window.copyUSSDCode = copyUSSDCode;
-window.toggleFAQ = toggleFAQ;
-window.playVideo = playVideo;
-window.toggleVolume = toggleVolume;
