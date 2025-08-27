@@ -354,9 +354,22 @@ function playVideo() {
     const placeholder = document.getElementById('video-placeholder');
     const embed = document.getElementById('video-embed');
     
-    // Show the video embed and hide placeholder
-    placeholder.style.display = 'none';
-    embed.style.display = 'block';
+    if (placeholder && embed) {
+        // Show the video embed and hide placeholder
+        placeholder.style.display = 'none';
+        embed.style.display = 'block';
+        
+        // Try to play the video
+        const iframe = embed.querySelector('iframe');
+        if (iframe) {
+            // Reload iframe to trigger autoplay
+            const src = iframe.src;
+            iframe.src = '';
+            setTimeout(() => {
+                iframe.src = src;
+            }, 100);
+        }
+    }
 }
 
 function toggleVolume() {
