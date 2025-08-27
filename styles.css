@@ -1464,11 +1464,14 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     transition: all var(--transition-slow);
     box-shadow: 0 20px 40px rgba(255, 125, 0, 0.3);
+    text-decoration: none;
+    color: white;
 }
 
 .demo-icon:hover {
     transform: scale(1.1) rotate(360deg);
     box-shadow: 0 25px 50px rgba(108, 99, 255, 0.4);
+    color: white;
 }
 
 .demo-icon::before {
