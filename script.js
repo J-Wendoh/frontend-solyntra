@@ -36,7 +36,7 @@ class ThemeManager {
                 this.theme = e.matches ? 'dark' : 'light';
                 this.applyTheme();
             }
-        });src="https://www.youtube.com/embed/r0weTNSGCuc?si=Ve7GKIv7Ix8prPIWhttps://youtu.be/r0weTNSGCuc?si=Ve7GKIv7Ix8prPIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        });
     }
 }
 
